@@ -141,6 +141,3 @@ for step in steps:
 print(result)
 
 
-
-input_data = input()
-row = int(input)
