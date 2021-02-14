@@ -58,7 +58,7 @@
 # # 첫 번째 문자를 숫자로 변경하여 대입
 # result = int(data[0])
 #
-# # 두 번째 숫자부터 for문을 돌림
+# # 두 번째 숫자부터 for 문을 돌림
 # for i in range(1, len(data)):
 #     # 두 수 중에서 하나라도 '0' 혹은 '1'인 경우, 곱하기보다는 더하기 수행
 #     num = int(data[i])
@@ -125,19 +125,155 @@
 # print(result)
 
 
-input_data = input()
-row = int(input_data[1])
-column = int(ord(input_data[0])) - int(ord('a')) + 1
+# input_data = input()
+# row = int(input_data[1])
+# column = int(ord(input_data[0])) - int(ord('a')) + 1
+#
+# steps = [(-2, -1), (-1, -2), (1, -2), (2, -1), (2, 1), (1, 2), (-1, 2), (-2, 1)]
+#
+# result = 0
+# for step in steps:
+#     next_row = row + step[0]
+#     next_column = column + step[1]
+#
+#     if 1 <= next_row <= 8 and 1 <= next_column <= 8:
+#         result += 1
+# print(result)
 
-steps = [(-2, -1), (-1, -2), (1, -2), (2, -1), (2, 1), (1, 2), (-1, 2), (-2, 1)]
+# input_data = input()
+# row = int(input_data[1])
+# column = int(ord(input_data[0])) - int(ord('a')) + 1
+#
+# steps = [(-2, -1), (-1, -2), (1, -2), (2, -1), (2, 1), (1, 2), (-1, 2), (-2, 1)]
+#
+# result = 0
+# for step in steps:
+#     next_row = row + step[0]
+#     next_column = column + step[1]
+#
+#     if 1 <= next_row <= 8 and 1 <= next_column <= 8:
+#         result += 1
+#
+# print(result)
 
-result = 0
-for step in steps:
-    next_row = row + step[0]
-    next_column = column + step[1]
+# data = input()
+# result = []
+# value = 0
+#
+# for x in data:
+#     if x.isalpha():
+#         result.append(x)
+#     else:
+#         value += int(x)
+#
+# result.sort()
+#
+# if value != 0:
+#     result.append(str(value))
+# print(result)
+# print(''.join(result))
 
-    if 1 <= next_row <= 8 and 1 <= next_column <= 8:
-        result += 1
-print(result)
+
+# n = int(input())
+# count = 0
+# list = [500, 100, 50, 10]
+# for coin in list:
+#     count += n // coin
+#     n %= coin
+# print(count)
+
+
+# n, m, k = map(int, input().split())
+# data = list(map(int, input().split()))
+#
+# data.sort()
+# first = data[-1]
+# second = data[-2]
+# result = 0
+#
+# while True:
+#     for i in range(k):
+#         if m == 0:
+#             break
+#         result += first
+#         m -= 1
+#     if m == 0:
+#         break
+#     result += second
+#     m -= 1
+# print(result)
+
+
+
+# n = input()
+# count = 0
+# while n >= 0:
+#     if n % 5 == 0:
+#         count += n // 5
+#         print(count)
+#         break
+#     n -= 3
+#     count += 1
+# else:
+#     print(-1)
+
+
+# n = int(input())
+# people = list(map(int, input().split()))
+# result = 0
+# bsum = 0
+# sp = sorted(people)
+# for i in range(n):
+#     if i == 0:
+#         result += sp[0]
+#         continue
+#     for j in range(i):
+#         bsum += sp[j]
+#     result += sp[i] + bsum
+#     bsum = 0
+# print(result)
+
+# n = int(input())
+# s = list(map(int, input().split()))
+#
+# s.sort()
+# result = 0
+# for i in range(n):
+#     for j in range(i+1):
+#         result += s[j]
+# print(result)
+
+
+# n, total = list(map(int, input().split()))
+# count = 0
+#
+# moneys = []
+# for i in range(n):
+#     moneys.append(int(input()))
+#
+# moneys.reverse()
+# for money in moneys:
+#     if total >= money:
+#         count += total // money
+#         total %= money
+#     if total == 0:
+#         break
+# print(count)
+
+
+# n, k = map(int, input().split())
+# count = 0
+#
+# while n >= 1:
+#     if n % k != 0:
+#         n -= 1
+#         count += 1
+#     n //= k
+#     count += 1
+#
+#     if n == 1:
+#         break
+# print(count)
+
 
 
