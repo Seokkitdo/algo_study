@@ -276,4 +276,86 @@
 # print(count)
 
 
+# n = int(input())
+# data = list(map(int, input().split()))
+#
+# data.sort()
+# group = 0
+# count = 0
+#
+# for i in data:
+#     count += 1
+#     if count >= i:
+#         group += 1
+#         count = 0
+# print(group)
 
+
+# n = input()
+# result = int(n[0])
+#
+# for i in range(1, len(n)):
+#     num = int(n[i])
+#     if num <= 1 or result <= 1:
+#         result += num
+#     else:
+#         result *= num
+# print(result)
+
+
+# data = input()
+# count1 = 0
+# count0 = 0
+#
+# if data[0] == '1':
+#     count1 += 1
+# else:
+#     count0 += 1
+#
+# for i in range(len(data) - 1):
+#     if data[i] != data[i + 1]:
+#         if data[i + 1] == '1':
+#             count1 += 1
+#         else:
+#             count0 += 1
+# print(min(count0, count1))
+
+
+# n = input()
+# data = list(map(int, input().split()))
+#
+# target = 1
+#
+# for x in data:
+#     if target < x:
+#         break
+#     target += x
+# print(target)
+
+
+
+# n, m = map(int, input().split()) #볼링공 n개랑 최대무게 : m
+# k = list(map(int, input().split()))
+# result = 0
+#
+# for i in range(len(k)):
+#     for j in range(i+1, len(k)):
+#         if k[i] == k[j]:
+#             continue
+#         result += 1
+#
+# print(result)
+
+
+food_times = list(map(int, input().split()))
+k = map(int, input())
+all_ft = 0
+
+for i in food_times:
+    all_ft += i
+
+
+
+for i in range(all_ft):
+    if i % len(food_times) == 1:
+        food_times[i]
